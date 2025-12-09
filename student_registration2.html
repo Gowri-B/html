@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Registration form</title>
+	</head>
+	<style>
+		label{
+			font-family:"Lucida Calligraphy";
+			}
+	</style>
+	<body bgcolor="purple">
+	<form action="register.py" method="post">
+		<h3>STUDENT REGISTRATION FORM</h3>
+		<label for="name">FIRST NAME</label>
+		<input type="text" name="name" placeholder="first name" required>
+
+		<br><br>
+		<label for="name1">LAST NAME</label>
+		<input type="text" name="name1" placeholder="last name">
+
+		<br><br>
+		<label for="DOB">Date of Birth </label>
+		<input type="date" name="DOB" >
+
+		<br><br>
+		<label for="email">Email </label>
+		<input type="email" name="email" >
+
+		<br><br>
+		<label for="mobile">Mobile Number </label>
+		<input type="number" name="mobile">
+
+		<br><br>
+		<label for="Gender">Gender</label>
+		<input type="radio" name="Gender" value="male">
+		<span>male</span>
+		<input type="radio" name="Gender" value="female">
+		<span>female</span>
+
+		<br><br>
+		<label for="Address">Address</label>
+		<textarea name="Address" rows="3" cols="10">
+		</textarea>
+
+		<br><br>
+		<label for="city">City</label>
+		<input type="text" name="city">
+
+		<br><br>
+		<label for="pincode">Pincode</label>
+		<input type="number" name="pincode">
+
+		<br><br>
+		<label for="state">State</label>
+		<select name="state">
+			<option value=""></option>
+			<option value="ap">AP</option>
+			<option value="viz">VIZ</option>
+			<option value="guntur">Guntur</option>
+			<option value="kurnool">kurnool</option>
+			<option value="telangana">telangana</option>
+		</select>
+
+		<br><br>
+		<label for="Country">Country</label>
+		<input type="text" name="Country" value="india">
+
+		<br><br>
+		<label for="hobbies">Hobbies</label>
+		<input type="checkbox" name="hobbies" value="Drawing">
+		<span>Drawing</span>
+
+		<input type="checkbox" name="hobbies" value="Singing">
+		<span>Singing</span>
+
+		<input type="checkbox" name="hobbies" value="Dancing">
+		<span>Dancing</span>
+
+		<input type="checkbox" name="hobbies" value="Sketching">
+		<span>Sketching</span>
+
+		<input type="checkbox" name="hobbies" value="other">
+		<span>Other</span>
+		<input type="text" name="hobbies">
+
+		<br><br>
+		<label for="Courses">Courses applied for</label>
+		<input type="radio" name="Courses" value="bca">
+		<span>BCA</span>
+
+		<input type="radio" name="Courses" value="bcom">
+		<span>B.Com</span>
+
+		<input type="radio" name="Courses" value="bsc">
+		<span>BSC</span>
+
+		<input type="radio" name="Courses" value="ba">
+		<span>B.A</span>
+		<br><br>
+
+		<label for="submit"></label>
+		<input type="submit" name="submit" value="submit">
+		
+		<label for="reset"></label>
+		<input type="reset" name="reset" value="reset">
+		
+		</form>
+	</body>
+</html>
