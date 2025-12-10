@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Nested table</title>
+	</head>
+	<body>
+		<h2>Sample Webpage Format</h2>
+		<table border="1" cellpadding="5px">
+			<tr>
+				<td id="col1">Heading</td>
+				<td id="col2">Lists</td>
+				<td id="col3">Formatting</td>
+				<td id="col4">Forms</td>
+				<td id="col5"><a href="nested_table.html">Tables</a></td>
+				<td id="col6">Limks</td>
+			</tr>
+		</table>
+		<h2>Nested Tables</h2>
+		<!--5rows , 4columns-->
+		<table border="1">
+		<tr id="row-1">
+			<th id="col-1">Header column 1</th>
+			<th id="col-2">Header column 2</th>
+			<th id="col-3">Header column 3</th>
+			<th id="col-4">Header column 4</th>
+		</tr>
+		<tr id="row-2">
+			<td id="col-1">Row 2 - Item 1</td>
+			<td id="col-2">Row 2 - Item 2</td>
+			<td id="col-3" rowspan="2"><h3>Row 2:Nested Table 1 </h3>
+				<table border="1">
+						<tr id="rows1">
+							<th id="cols1">Row 1 Header</th>
+							<td id="cols2">item</td>
+						</tr>
+						<tr id="rows2">
+							<th id="cols1">Row 2 Header</th>
+							<td id="cols2">item</td>
+						</tr>
+						<tr id="rows3">
+							<th id="cols1">Row 3 Header</th>
+							<td id="cols2">item</td>
+						</tr>
+				</table>
+			</td>
+			<td id="col-4">Row 2 - Item 4<br> A second lineitem</td>
+		</tr>
+		<tr id="row-3">
+			<td id="col-1"><h3>Row 3:Nested Table 2</h3>
+			<table border="1">
+				<tr id="r1">
+					<th id="c1">Row 1 Header</th>
+					<td id="c2">item</td>
+				</tr>
+				<tr id="r2">
+					<th id="c1">Row 2 Header</th>
+					<td id="c2">item</td>
+				</tr>
+			</table>
+			</td>
+			<td id="col-2">Row 3 - Item 2</td>
+			<td id="col-3" rowspan="2">Row 3 - Item 3</td>
+		</tr>
+		<tr id="row-4">
+			<td id="col-1">Row 4 - Item 1</td>
+			<td id="col-2">Row 4 - Item 2</td>
+			<td id="col-3">Row 4 - Item 3</td>
+		</tr>
+		<tr id="row-5">
+			<td id="col-1" colspan="4">Row 5 - Last row of outer table</td>
+		</tr>
+	</table>
+	</body>
+</html>
