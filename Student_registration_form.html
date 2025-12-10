@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Student Registration from</title>
+	</head>
+	<body>
+	<h2>Sample Webpage Format</h2>
+		<table border="1" cellpadding="5px">
+			<tr>
+				<td id="col1">Heading</td>
+				<td id="col2">Lists</td>
+				<td id="col3">Formatting</td>
+				<td id="col4"><a href="Student_registration_form.html">Forms</a></td>
+				<td id="col5">Tables</td>
+				<td id="col6">Limks</td>
+			</tr>
+		</table>
+		<!-- Student forms -->
+		<h2>Student Registration from</h2>
+		<form action="student_registration.html" method="post">
+		<fieldset>
+			<legend>Student Registration</legend>
+
+			<label for="texttype">NAME :</label>
+			<input type="text" name="textype" placeholder="enter name" required>
+			<br><br>
+
+			<label for="dateype">DOB:</label>
+			<input type="date" name="datetype" placeholder="Select date" required="date">
+			<br><br>
+
+			<label for="address">Address :</label>
+			<input type="address" name="address" placeholder="enter address" >
+			<br><br>
+
+			<label for="Gender">Gender :</label>
+			<label><input type="radio" name="Gender" value="male">Male</label>
+			<label><input type="radio" name="Gender" value="male">Female</label>
+			<br><br>
+
+			<label for="Number">Phone :</label>
+			<input type="number" name="Number" placeholder="enter number">
+			<br><br>
+
+			<label for="email">Email :</label>
+			<input type="email" name="email" >
+			<br><br>
+
+			<label for="language">Language :</label>
+			<input type="checkbox" name="language" value="Telugu">Telugu
+			<input type="checkbox" name="language" value="English">English
+			<input type="checkbox" name="language" value="Hindi">Hindi
+			<br><br>
+
+			<label for="courses">Course :</label>
+
+			<select name="courses" id="courses" placeholder="select your course">
+				<option value="choose">choose</option>
+				<option value="BSC">BSC</option>
+				<option value="BCA">BCA</option>
+				<option value="BCOM">BCOM</option>
+				<option value="AI">AI</option>
+			</select>
+
+		</fieldset>
+		</form>
+
+	</body>
